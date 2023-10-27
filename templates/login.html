@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>OCR PROCESSOR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./form.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        width: 400px;
+        margin: 50px auto;
+    }
+    h2 {
+        color: #333;
+        text-decoration: underline;
+    }
+    .container {
+        max-width: 100px;
+        margin: 0 auto;
+    }
+    .form-container {
+        background-color: #f7f7f7;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px #999;
+    }
+   .form-field{
+    background-color: rgba(255, 255, 255, 0.964);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 2em;
+   }
+   
+    button {
+        background-color: #333;
+        color: #fff;
+        margin: 10px 0px 5px 50px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="form-container">
+    
+        <div class="loginform">
+            <h2>Login form</h2>
+            <form action="/login" method="POST">
+                <div class="form">
+                <label for="username]">Username:</label>
+                <input type="text" class="form-field" id="username" placeholder="Enter username" name="username">
+                </div>
+                <div class="form">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-field" id="pwd" placeholder="Enter password" name="password">
+                </div>
+
+                <button type="submit" class="btn btn-dark">Submit</button>
+                <br>
+                <a href="/register" class="link">Don't have account! Register Here</a>
+            </form>
+        </div>
+
+   
+  
+</div>
+
+</body>
+</html>
